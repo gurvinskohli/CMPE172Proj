@@ -1,2 +1,2 @@
 # CMPE172Proj
-A Food Forum
+Food based forum - upload recipes, browse recipes while learning about the calorie intake..
