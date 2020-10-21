@@ -1,6 +1,6 @@
 # CMPE172Proj
 ## San Jose State University 
+## Enterprise Software-CMPE172/Fall 2020
+## Team: Gurvin Kohli, Hibo Osman, Arielle Shnayder
 
-
-
-Food based forum - upload recipes, browse recipes while learning about the calorie intake..
+## Project Introducetion
