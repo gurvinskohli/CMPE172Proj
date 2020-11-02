@@ -34,7 +34,7 @@ public class Food {
 	    public Food() {
 	    }
 	  	
-	    public Food(String name, String ingredients, String recipse) {
+	    public Food(String name, String ingredients, String recipe) {
 	    	this.name = name;
 	    	this.ingredients = ingredients;
 	    	this.recipe = recipe;

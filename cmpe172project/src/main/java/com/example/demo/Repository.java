@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface Repository extends CrudRepository<Food, Integer> {
 
-    List<Food> findByBreed(String breed);
+	List<Food> findByName(String name);
 
 
     

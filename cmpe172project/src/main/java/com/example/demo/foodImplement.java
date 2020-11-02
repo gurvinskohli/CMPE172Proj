@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class foodImplement implements foodService {
 
-    @Autowired
+	@Autowired
     private Repository foodRepository;
 
     @Override
@@ -38,25 +38,25 @@ public class foodImplement implements foodService {
 //    }
     
     @Override
-    public List<Food> findByBreed(String type) {
-        return foodRepository.findByBreed(type);
+    public List<Food> findByName(String name) {
+        return foodRepository.findByName(name);
     }
 
-@Override
-public Food findOne(Integer id) {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-@Override
-public void delete(Integer id) {
-	// TODO Auto-generated method stub
+	@Override
+	public Food findOne(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
-}
-
-@Override
-public void save(Food type) {
-	// TODO Auto-generated method stub
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
 	
-}
+	@Override
+	public void save(Food type) {
+		// TODO Auto-generated method stub
+	
+	}
 }

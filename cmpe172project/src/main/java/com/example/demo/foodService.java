@@ -14,7 +14,7 @@ public interface foodService {
     //save
     void save(Food type);
     //search by breed
-    List<Food> findByBreed(String type);
+    List<Food> findByName(String type);
 	
 
 }

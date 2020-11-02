@@ -17,7 +17,6 @@ public class FoodController {
 	@Autowired
     private foodService foodService;
     
-    //redirect:/dog
     @RequestMapping(value= "/dog",method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("dogs", foodService.findAll());
@@ -49,7 +48,7 @@ public class FoodController {
     // search for dog by breed
     @RequestMapping(value= "/dog/search",method = RequestMethod.GET)
     public String search(@RequestParam("breed") String breed, Model model) {
-        model.addAttribute("dogs", foodService.findByBreed(breed));
+        model.addAttribute("dogs", foodService.findByName(breed));
         return "home";
     }
     
@@ -60,7 +59,6 @@ public class FoodController {
         model.addAttribute("dog", foodService.findOne(id));
         return "register";
     }
-
 
 
 }
