@@ -73,7 +73,7 @@ export default function SimpleTable() {
 
   const columns = [
     {
-      name: "product_ID",
+      name: "recipe_ID",
       label: "Recipe ID",
       options: {
         filter: true,
@@ -93,7 +93,7 @@ export default function SimpleTable() {
       }
     },
     {
-      name: "price",
+      name: "ingredients",
       label: "Ingredients",
       options: {
         filterType: "multiselect",
@@ -103,7 +103,7 @@ export default function SimpleTable() {
       }
     },
     {
-      name: "category",
+      name: "allergens",
       label: "Allergens",
       options: {
         filterType: "multiselect",

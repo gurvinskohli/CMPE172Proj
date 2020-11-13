@@ -21,7 +21,7 @@ public class Product
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column
-	private Integer recipid;
+	private Integer recipe_ID;
 	
 	@Column
 	private String name;
@@ -39,19 +39,18 @@ public class Product
 	@Override
 	public String toString()
 	{
-		return "Product [Recipe_ID = " + recipid + 
+		return "Product [recipe_ID = " +  recipe_ID+ 
 				", name = " + name + ", ingredients = "
 				+ ingredients + ", allergens = " + allergens + "]";
 	}
-
-	public Integer getProduct_ID() 
+	public Integer getRecipe_ID() 
 	{
-		return recipid;
+		return recipe_ID;
 	}
 
-	public void setProduct_ID(Integer recipid) 
+	public void setRecipe_ID(Integer recipe_ID) 
 	{
-		this.recipid = recipid;
+		this.recipe_ID = recipe_ID;
 	}
 
 	public String getName() 
@@ -64,22 +63,22 @@ public class Product
 		this.name = name;
 	}
 
-	public String getPrice() 
+	public String getIngredients() 
 	{
 		return ingredients;
 	}
 
-	public void setPrice(String ingredients) 
+	public void setIngredients(String ingredients) 
 	{
 		this.ingredients = ingredients;
 	}
 
-	public String getCategory() 
+	public String getAllergens() 
 	{
 		return allergens;
 	}
 
-	public void setCategory(String allergens) 
+	public void setAllergens(String allergens) 
 	{
 		this.allergens = allergens;
 	}

@@ -27,11 +27,11 @@ class navbar extends React.Component {
               Home <span class="sr-only">(current)</span>
             </a>
             <a class="nav-item nav-link active" href="/Product">
-              Product
+              Recipe
             </a>
            
             <a class="nav-item nav-link active" href="/AddProduct">
-              Add Product
+              Add Recipe
             </a>
             
           </div>

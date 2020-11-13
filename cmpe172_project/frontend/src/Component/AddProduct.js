@@ -43,8 +43,8 @@ export default function AddProduct() {
 
   
   const [name, setName] = React.useState("");
-  const [price, setIngr] = React.useState("");
-  const [category, setCategory] = React.useState("");
+  const [ingredients, setIngr] = React.useState("");
+  const [allergens, setCategory] = React.useState("");
 
   //const handleDateChange = date => setSelectedDate(date);
   const handleNameChange = event => setName(event.target.value);
@@ -68,12 +68,12 @@ export default function AddProduct() {
       body: JSON.stringify(toInput) // body data type must match "Content-Type" header
     });
     let body = await response.json();
-    console.log(body.product_ID);
-    setMessage(body.product_ID ? "Data sucessfully updated" : "Data updation failed");
+    console.log(body.recipe_ID);
+    setMessage(body.recipe_ID ? "Data sucessfully updated" : "Data updation failed");
   }
 
   const handleSubmit = variables => {
-    const toInput = { name, price, category };
+    const toInput = { name, ingredients, allergens };
     sampleFunc(toInput);
     setName("");
     setIngr("");
@@ -118,7 +118,7 @@ export default function AddProduct() {
                 variant="outlined"
                 required
                 fullWidth
-                value={price}
+                value={ingredients}
                 id="ingredients"
                 label="Ingredients"
                 onChange={handlPriceChange}
@@ -132,7 +132,7 @@ export default function AddProduct() {
                 required
                 fullWidth
                 id="category"
-                value={category}
+                value={allergens}
                 label="Allergens"
                 name="category"
                 autoComplete="category"
