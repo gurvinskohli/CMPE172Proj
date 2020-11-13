@@ -1,13 +1,14 @@
-package com.cmpe172_project;
+package com;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Cmpe172ProjectApplication {
+public class Cmpe172Project {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Cmpe172ProjectApplication.class, args);
+		SpringApplication.run(Cmpe172Project.class, args);
 	}
 
 }

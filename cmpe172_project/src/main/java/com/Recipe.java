@@ -1,4 +1,4 @@
-package com.cmpe172_project.modal;
+package com;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="recipes")
-public class Product 
+public class Recipe 
 {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -32,14 +32,14 @@ public class Product
 	@Column
 	private String allergens;
 	
-	@OneToMany(cascade=CascadeType.ALL, mappedBy="product")
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="recipe")
 	@JsonIgnore
 	
 	
 	@Override
 	public String toString()
 	{
-		return "Product [recipe_ID = " +  recipe_ID+ 
+		return "Recipe [recipe_ID = " +  recipe_ID+ 
 				", name = " + name + ", ingredients = "
 				+ ingredients + ", allergens = " + allergens + "]";
 	}

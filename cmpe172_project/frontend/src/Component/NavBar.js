@@ -23,14 +23,15 @@ class navbar extends React.Component {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
+            
             <a class="nav-item nav-link active" href="/Home">
               Home <span class="sr-only">(current)</span>
             </a>
-            <a class="nav-item nav-link active" href="/Product">
+            <a class="nav-item nav-link active" href="/Recipe">
               Recipe
             </a>
            
-            <a class="nav-item nav-link active" href="/AddProduct">
+            <a class="nav-item nav-link active" href="/AddRecipe">
               Add Recipe
             </a>
             

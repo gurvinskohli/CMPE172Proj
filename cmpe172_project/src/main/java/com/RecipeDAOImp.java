@@ -1,4 +1,4 @@
-package com.cmpe172_project.dao;
+package com;
 
 import java.util.List;
 
@@ -9,43 +9,43 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.cmpe172_project.modal.Product;
+import com.Recipe;
 
 @Repository
-public class ProductDAOImp implements ProductDAO
+public class RecipeDAOImp implements RecipeDAO
 {
 	@Autowired
 	private EntityManager entityManager;
 		
 	@Override
-	public List<Product> get() 
+	public List<Recipe> get() 
 	{
 		Session currSession = entityManager.unwrap(Session.class);
 		
-		Query<Product> query = currSession.createQuery("from Product",
-				Product.class);
+		Query<Recipe> query = currSession.createQuery("from Recipe",
+				Recipe.class);
 		
-		List<Product> list = query.getResultList();
+		List<Recipe> list = query.getResultList();
 		
 		return list;
 	}
 
 	@Override
-	public Product get(int id) 
+	public Recipe get(int id) 
 	{
 		Session currSession = entityManager.unwrap(Session.class);
 		
-		Product product = currSession.get(Product.class, id);
+		Recipe recipe = currSession.get(Recipe.class, id);
 		
-		return product;
+		return recipe;
 	}
 
 	@Override
-	public void save(Product product) 
+	public void save(Recipe recipe) 
 	{
 		Session currSession = entityManager.unwrap(Session.class);
 		
-		currSession.saveOrUpdate(product);
+		currSession.saveOrUpdate(recipe);
 	}
 
 	@Override
@@ -53,9 +53,9 @@ public class ProductDAOImp implements ProductDAO
 	{
 		Session currSession = entityManager.unwrap(Session.class);
 		
-		Product product = currSession.get(Product.class, id);
+		Recipe recipe = currSession.get(Recipe.class, id);
 		
-		currSession.delete(product);
+		currSession.delete(recipe);
 	}
 
 }

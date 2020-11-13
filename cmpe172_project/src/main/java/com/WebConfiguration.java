@@ -1,4 +1,4 @@
-package com.cmpe172_project.controller;
+package com;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

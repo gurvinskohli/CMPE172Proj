@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function AddProduct() {
+export default function AddRecipe() {
   const classes = useStyles();
   const [firstLoad, setLoad] = React.useState(true);
 
@@ -54,7 +54,7 @@ export default function AddProduct() {
   const [message, setMessage] = React.useState("Nothing saved in the session");
 
   async function sampleFunc(toInput) {
-    const response = await fetch("/api/product", {
+    const response = await fetch("/api/recipe", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -155,7 +155,7 @@ export default function AddProduct() {
 
           <Grid container justify="center">
             <Grid item>
-              <Link to="/product">View all Recipes</Link>
+              <Link to="/recipe">View all Recipes</Link>
             </Grid>
           </Grid>
         </form>

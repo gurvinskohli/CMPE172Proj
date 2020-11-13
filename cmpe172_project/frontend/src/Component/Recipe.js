@@ -57,7 +57,7 @@ export default function SimpleTable() {
   let isLoading = true;
 
   async function sampleFunc() {
-    let response = await fetch("/api/product");
+    let response = await fetch("/api/recipe");
     let body = await response.json();
     upDateData(body);
   }
