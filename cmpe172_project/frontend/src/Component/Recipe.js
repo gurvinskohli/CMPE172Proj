@@ -112,6 +112,9 @@ export default function SimpleTable() {
         sort: true
       }
     },
+
+
+
   ];
   const options = {
     filterType: "checkbox"
