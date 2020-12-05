@@ -37,8 +37,15 @@ class navbar extends React.Component {
 	     <a class="nav-item nav-link active" href="/share">
               Share
             </a>
-	    
-            
+	    <a class="nav-item nav-link active" href="/a">
+              Suggestions
+            </a>
+        <a class="nav-item nav-link active" href="aboutUs.html">
+              About Us
+            </a>
+      <a class="nav-item nav-link active" href="">
+              Contact Us
+            </a>
           </div>
         </div>
       </nav>
