@@ -11,6 +11,9 @@ SpartanFoods will be an application that will contain lists pertaining to food r
 <img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/AddRecipe.png">
 <img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/Recipe.png">
 <img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/Share.png">
+<img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/suggestions.png">
+<img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/aboutUs.png">
+<img width="600" alt="1" src="https://github.com/hibozahara/CMPE172Proj/blob/main/cmpe172_project/frontend/src/Component/img/contactUs.png">
 
 ## Required Technologies - 
 #### These technologies are required in order to run the project locally.
