@@ -1,7 +1,7 @@
 ## CMPE172 - SpartanFoods
 #### San Jose State University 
 ##### Enterprise Software-CMPE172/Fall 2020
-#### Team 8: Gurvin Kohli
+#### Team 8: Hibo Osman, Arielle Shnayder, Gurvin Kohli
 
 ## Project Introduction -
 SpartanFoods is an application that contains lists pertaining to food recipes. SpartanFoods is competent to filter recipes based on dietary restrictions the user has. The user can submit a form which asks for the dish name, ingredients, and allergens. There is a full on display feature that assists the user in discovering new recipes that fits the user’s dietary restrictions (as they are able to filter by certain ingredients or allergens). As default, there are about a dozen recipes present on the recipe discovery page but as the application is utilized by users, the number of recipes will increase. Once a recipe is submitted, the user will be prompted to view the recipe discovery page to explore. This application solves the issue individuals with dietary restrictions encounter on a daily basis, which is the perplexing nature of finding recipes that meet their dietary restrictions.         
